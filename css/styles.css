@@ -46,16 +46,18 @@ a {
 @media only screen and (max-width: 768px) {
     .title {
     color: #0F4A0A;
-    font-size: 5vw;
+    font-size: 11vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
-  
+
     .line {
     color: #6C9A6B;
     display: flex;
+    font-size: 6vw;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
   }
 }
