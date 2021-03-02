@@ -59,25 +59,26 @@ animation: textcolorchange 16s linear 4s 1 normal forwards;
 .end {
   margin-top:-15vw;
   font-size: 5rem;
-  text-shadow: 0px 0px 7px #6C9A6B;
+  color: #F6FFF2;
+  /* text-shadow: 0px 0px 7px #6C9A6B; */
     animation:text-focus-in 12s ease-in 0s forwards;
 }
 
 a {
   text-decoration: none;
-    color: #040E00;
+    color: #F6FFF2;
     animation: blink-animation 2s steps(12, start) infinite;
     -webkit-animation: blink-animation 2s steps(12, start) infinite;
   }
 
   @keyframes blink-animation {
     50% {
-      opacity: 0.0;
+      opacity: 30%;
     }
   }
   @-webkit-keyframes blink-animation {
     50% {
-      opacity: 0.0;
+      opacity: 30%;
     }
 }
 
