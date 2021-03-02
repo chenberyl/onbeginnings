@@ -2,6 +2,10 @@
 
 body {
   background-color: #F6FFF2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content:center;
 }
 
 p {
@@ -10,11 +14,12 @@ p {
 
 .title {
   color: #0F4A0A;
-  font-size: 14vw;
+  font-size: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
+  margin: 0;
 }
 
 .line {
@@ -55,9 +60,10 @@ a {
     .line {
     color: #6C9A6B;
     display: flex;
-    font-size: 6vw;
+    font-size: 3vw;
+    text-align: center;
     justify-content: center;
     align-items: flex-end;
-    flex-wrap: wrap;
+    white-space: unset;
   }
 }

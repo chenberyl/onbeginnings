@@ -3,6 +3,9 @@
  body {
   background-color: #EDFFE6;
   animation: colorchange 4s linear 2s 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
 }
 
 @keyframes colorchange {
@@ -79,12 +82,26 @@ p {
 }
 
 a {
-  background-color: #6FC74F;
+  /* background-color: #6FC74F; */
   color: #6FC74F;
   grid-row-start: 6;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 1vw;
+  font-size: 2rem;
   text-align: center;
+  text-decoration: none;
+  animation: blink-animation 3s steps(15, start) infinite;
+  -webkit-animation: blink-animation 3s steps(15, start) infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink-animation {
+  50% {
+    opacity: 0.0;
+  }
 }
 
 .link {
@@ -93,4 +110,16 @@ a {
   width: 5px;
   height: 5px;
   grid-row-start: 6;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 5vw;
+    white-space: unset;
+  }
+
+  .second {
+    white-space: unset;
+    font-size: 5vw;
+  }
 }

@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 body {
-  background-color: #89D96C;
+  background-color: #95E17A;
+  animation: colorchange 16s linear 2s 1 normal forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes colorchange {
+  from {background-color: #95E17A;}
+  to {background-color: #5CAF3F;}
 }
 
 .container {
@@ -12,17 +21,17 @@ body {
 }
 
 p {
-  color: #43852B;
+  color: #5CAF3F;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-align: center;
-  text-align: justify;
-  text-justify: inter-word;
+  /* text-align: justify;
+  text-justify: inter-word; */
   width: 50vw;
 }
 
 a {
-  color: #43852B;
+  color: #C6FFB2;
   text-decoration: none;
   animation: blink-animation 1s steps(7, start) infinite;
   -webkit-animation: blink-animation 1s steps(7, start) infinite;
@@ -41,6 +50,20 @@ a {
 }
 
 .scrollable {
-    height: 20vh;
+    height: 50vh;
     overflow-y: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 5vw;
+    width: 70vw;
+  }
+
+  .scrollable {
+      height: 50vh;
+      overflow-y: auto;
+  }
 }

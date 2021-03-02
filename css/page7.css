@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+body {
+  background-color: #071A00;
+  display: flex;
+  justify-content: center;
+  animation: colorchange 17s linear 4s 1 normal forwards;
+}
+
+@keyframes colorchange {
+  from {background-color: #071A00;}
+  to {background-color: #040E00;}
+}
+
+.container {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 70vw;
+}
+
+.one {
+  padding-top: 1vw;
+  color: #234F13;
+  animation: textcolorchange 10s linear 4s 1 normal forwards;
+}
+
+.two {
+  color: #1F4511;
+    animation: textcolorchange 11s linear 4s 1 normal forwards;
+}
+
+.three {
+  color: #1A3B0E;
+    animation: textcolorchange 12s linear 4s 1 normal forwards;
+}
+
+.four {
+  color: #15320B;
+    animation: textcolorchange 13s linear 4s 1 normal forwards;
+}
+
+.five {
+  color: #112A08;
+    animation: textcolorchange 14s linear 4s 1 normal forwards;
+}
+
+.six {
+  color: #0D2306;
+    animation: textcolorchange 15s linear 4s 1 normal forwards;
+}
+
+.seven {
+  color: #0A1E04;
+animation: textcolorchange 16s linear 4s 1 normal forwards;
+}
+
+
+.end {
+  margin-top:-15vw;
+  font-size: 5rem;
+  text-shadow: 0px 0px 7px #6C9A6B;
+    animation:text-focus-in 12s ease-in 0s forwards;
+}
+
+a {
+  text-decoration: none;
+    color: #040E00;
+    animation: blink-animation 2s steps(12, start) infinite;
+    -webkit-animation: blink-animation 2s steps(12, start) infinite;
+  }
+
+  @keyframes blink-animation {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    50% {
+      opacity: 0.0;
+    }
+}
+
+@keyframes textcolorchange {
+to {color: #040E00;}
+}
+
+@keyframes text-focus-in{0%{filter:blur(3px);opacity:0}100%{filter:blur(0);opacity:1}}

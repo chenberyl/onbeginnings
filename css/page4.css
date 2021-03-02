@@ -2,6 +2,12 @@
 
 body {
   background-color: #5CAF3F;
+  animation: colorchange 6s linear 2s 1 normal forwards;
+}
+
+@keyframes colorchange {
+  from {background-color: #5CAF3F;}
+  to {background-color: #46902C;}
 }
 
 .container {
@@ -12,9 +18,9 @@ body {
 }
 
 .text {
-  color: #E2FAD9;
+  color: #46902C;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 1vw;
+  font-size: 1.5rem;
   text-align: center;
   width: 65vw;
 }
@@ -38,25 +44,54 @@ body {
 #mydiv {
 position: absolute;
 z-index: 9;
-left: 35vw;
 text-align: center;
+top: -2rem;
 }
 
 #mydivheader {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  color: #E2FAD9;
+  color: #46902C;
+  background-color: #5CAF3F;
+  width: 65vw;
   font-family: 'IBM Plex Mono', monospace;
-  /* font-size:1.5vw; */
+  animation: colorchange 6s linear 2s 1 normal forwards;
 }
 
 a {
-  background-color: #49952F;
+  color: white;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
   width: 10px;
   height: 10px;
+  animation: blink-animation 3s steps(15, start) infinite;
+  -webkit-animation: blink-animation 3s steps(15, start) infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes blink-animation {
+  50% {
+    opacity: 0.1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  #mydivheader {
+    margin-top: 3rem;
+  }
 }
 
  /* #draggable {

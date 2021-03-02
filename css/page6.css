@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+body {
+  background-color: #1A3E0D;
+  animation: colorchange 15s linear 4s 1 normal forwards;
+}
+
+@keyframes colorchange {
+  from {background-color: #1A3E0D;}
+  to {background-color: #071A00;}
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: repeat (5, 20%);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.top {
+  color: #071A00;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.5vw;
+  grid-row: 1;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.one {
+  color: #071A00;
+  grid-row: 2;
+  padding-bottom: 3rem;
+}
+
+.two {
+  color: #071A00;
+  grid-row: 3;
+  padding-bottom: 3rem;
+}
+
+.three {
+  color: #071A00;
+  grid-row: 4;
+  padding-bottom: 3rem;
+}
+
+.bot {
+  color: #071A00;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.5vw;
+  grid-row: 5;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: black;
+  text-shadow: 0px 0px 5px #1A3E0D;
+  animation: blink-animation 3s steps(15, start) infinite;
+  -webkit-animation: blink-animation 3s steps(15, start) infinite;
+}
+
+span {
+  animation: blink-animation 2s steps(7, start) infinite;
+  -webkit-animation: blink-animation 2s steps(7, start) infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes blink-animation {
+  50% {
+    opacity: 0.1;
+  }
+}
+}
